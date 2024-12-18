@@ -48,12 +48,12 @@ function Main() {
         <motion.div className="flex flex-row gap-20" variants={staggerContainer}>
           <motion.div className="flex relative flex-col justify-between min-h-[506px] max-md:max-w-full" variants={slideUp}>
             <div className="text-7xl font-bold text-balance text-balance text-white max-md:max-w-full max-md:text-4xl">
-              Building the Future <br/>with <br/> Precision and Innovation
+              Building the Future <br />with <br /> Precision and Innovation
             </div>
             <div className="mt-11 text-2xl text-white max-md:mt-10 max-md:max-w-full">
-              With a focus on excellence, we build more than just structures <br/> —we build the future of connectivity.{" "}
+              With a focus on excellence, we build more than just structures <br /> —we build the future of connectivity.{" "}
             </div>
-            <motion.div className="flex flex-col justify-between items-center mx-20 mt-11 w-52 max-w-full text-base font-semibold bg-white rounded-xl min-h-[64px] text-neutral-700 max-md:mt-10" whileHover={{ scale: 1.05}}>
+            <motion.div className="flex flex-col justify-between items-center mx-20 mt-11 w-52 max-w-full text-base font-semibold bg-white rounded-xl min-h-[64px] text-neutral-700 max-md:mt-10" whileHover={{ scale: 1.05 }}>
               <div className="flex gap-6 justify-between items-center px-4 py-3 max-w-full rounded-xl min-h-[64px] w-[152px]">
                 <div className="self-stretch my-auto">Call Us</div>
                 <img
@@ -65,7 +65,7 @@ function Main() {
             </motion.div>
           </motion.div>
           <div className="flex relative flex-col">
-            <motion.div initial={ {x: 250, opacity:0}} animate={{ x: 10, opacity: 1}} transition={{ delay: 0.3 , type: 'spring'}}  className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] ">
+            <motion.div initial={{ x: 250, opacity: 0 }} animate={{ x: 10, opacity: 1 }} transition={{ delay: 0.3, type: 'spring' }} className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] ">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/3c9ead4fc4bffc733b773a961ef25d2ffd9e5054057de952171330b33883d5d8?apiKey=fd68332350f04fa6815471d918ff3511&"
@@ -73,7 +73,7 @@ function Main() {
               />
               <span className="text-sm text-indigo-900 font-bold ">100% Happy Clients</span>
             </motion.div>
-            <motion.div initial={ {x: 250, opacity:0}} animate={{ x: 10, opacity: 1}} transition={{ delay: 0.4 , type: 'spring'}} className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 mt-20 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] max-md:mt-10">
+            <motion.div initial={{ x: 250, opacity: 0 }} animate={{ x: 10, opacity: 1 }} transition={{ delay: 0.4, type: 'spring' }} className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 mt-20 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] max-md:mt-10">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/339b90c436601e2c111105c87a56ecc8b5c255bfec5c8d0d35b7f7e567836c19?apiKey=fd68332350f04fa6815471d918ff3511&"
@@ -81,7 +81,7 @@ function Main() {
               />
               <span className="text-sm text-indigo-900 font-bold ">Maintain Schedule</span>
             </motion.div>
-            <motion.div initial={ {x: 250, opacity:0}} animate={{ x: 10, opacity: 1}} transition={{ delay: 0.5 , type: 'spring'}} className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 mt-20 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] max-md:mt-10">
+            <motion.div initial={{ x: 250, opacity: 0 }} animate={{ x: 10, opacity: 1 }} transition={{ delay: 0.5, type: 'spring' }} className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 mt-20 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] max-md:mt-10">
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/72e69ce5dc68f4886f641c81972f66608a0ab5a8aa4bf32866f5eaea3078ecbd?apiKey=fd68332350f04fa6815471d918ff3511&"
@@ -97,7 +97,7 @@ function Main() {
           id="services"
           initial="hidden"
           whileInView="visible"
-          viewport={{once: true, amount: 0.4}}
+          viewport={{ once: true, amount: 0.5 }}
           className="flex flex-col items-center pt-px pr-36 pb-52 pl-36 w-full min-h-[763px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
           variants={staggerContainer}
         >
@@ -184,7 +184,7 @@ function Main() {
             </div>
           </div>
         </motion.div>
-        <div id="aboutus" className="flex flex-col items-center self-center w-full max-w-[1440px] min-h-[841px] max-md:max-w-full">
+        {/* <div id="aboutus" className="flex flex-col items-center self-center w-full max-w-[1440px] min-h-[841px] max-md:max-w-full">
           <div className="flex gap-2.5 items-center py-4 max-w-full text-2xl font-medium text-indigo-700 w-[1142px]">
             <div className="flex flex-col justify-center self-stretch my-auto">
               <div className="gap-2.5 self-stretch">About TowerEdge</div>
@@ -207,7 +207,39 @@ function Main() {
               className="object-contain self-stretch my-auto aspect-[0.95] min-w-[240px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[553px] max-md:max-w-full"
             />
           </div>
-        </div>
+        </div> */}
+        <section  className="py-24 relative">
+          <div id="aboutus" className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+            <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
+              <div className="w-full h-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
+                <div className="w-full flex-col justify-start lg:items-start items-center gap-12 flex">
+                  <div className="flex gap-2.5 items-center py-4 max-w-full text-2xl font-medium text-indigo-700 w-[1142px]">
+                    <div className="flex flex-col justify-center self-stretch my-auto">
+                      <div className="gap-2.5 self-stretch">About TowerEdge</div>
+                      <div className="mt-2.5 max-w-full border-2 border-solid border-indigo-700 min-h-[2px] w-[190px]" />
+                    </div>
+                  </div>
+                  <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">Building Stronger Communities through Collaboration and Excellence in Construction</h2>
+                  <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
+                    {/* Through collaborationperse perspectives and strengths 
+                    are leveraged to create inclusive environments where everyone has the opportunity to thrive. This approach not only fosters personal growth and achievement but also strengthens the fabric of society. */}
+                    At<strong className="text-indigo-700 text-xl">&nbsp;TowerEdge </strong>, We are pioneers in providing cutting-edge solutions for the telecommunications and Infrastructure sectors. Specializing in tower design, construction, maintenance, and Management, we deliver high-quality services that enable Seamless connectivity and Operational Efficiency.
+                    <br/> <br/>
+                      <strong >Founded in 2024</strong>, TowerEdge is committed to setting new standards in tower infrastructure.From initial planning and design to construction and ongoing management, we ensure that each tower is built with
+                      <strong className="italic underline underline-offset-4 "> &nbsp;Precision and Reliability </strong>.
+                    </p>
+                </div>
+              </div>
+              <img
+                //className="lg:mx-0 mx-auto h-full rounded-3xl object-cover"
+                // src="https://pagedone.io/asset/uploads/1717751272.png"
+                srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/4de93980a2e6cfda5ca22bb2d5764ac1640d814e8c2878062664933eb5b2b32c?apiKey=fd68332350f04fa6815471d918ff3511&"
+                className="object-contain self-stretch my-auto aspect-[0.95] min-w-[240px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[553px] max-md:max-w-full"
+                alt="about Us image"
+              />
+            </div>
+          </div>
+        </section>
         <div className="flex flex-col pb-11 w-full bg-blue-950 max-md:max-w-full">
           <div className="flex gap-2.5 items-center py-4 pr-36 pl-36 text-2xl font-medium whitespace-nowrap text-zinc-300 max-md:px-5 max-md:mr-0.5">
             <div className="flex flex-col justify-center self-stretch my-auto w-[100px]">
@@ -260,7 +292,6 @@ function Main() {
                 </div>
               </div> */}
               <div className="flex flex-col justify-between p-4 w-full min-h-[365px] max-md:max-w-full">
-                
                 <div className="gap-2.5 self-stretch p-4 w-full rounded-xl">
                   <input
                     id="email"

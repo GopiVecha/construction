@@ -41,19 +41,20 @@ function Main() {
       <motion.div className="flex relative flex-col flex-wrap gap-5 justify-between items-start px-20 pt-8 pb-12 w-full min-h-[767px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
         <motion.img
           loading="lazy"
+          //src="/img1.jpg"
           srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&"
-          className="object-cover absolute inset-0 size-full"
+          className="object-cover absolute inset-0 size-full bg-gradient-to-r from-slate-200 to-indigo-800"
           variants={fadeIn}
         />
-        <motion.div className="flex flex-row gap-20" variants={staggerContainer}>
-          <motion.div className="flex relative flex-col justify-between min-h-[506px] max-md:max-w-full" variants={slideUp}>
-            <div className="text-7xl font-bold text-balance text-balance text-white max-md:max-w-full max-md:text-4xl">
-              Building the Future <br />with <br /> Precision and Innovation
+        <motion.div className="flex flex-row items-center  justify-center gap-8" variants={staggerContainer}>
+          <motion.div className="flex relative flex-col  min-h-[506px] max-md:max-w-full" variants={slideUp}>
+            <div className="text-6xl mx-64 my-28 font-bold text-balance text-balance text-white max-md:max-w-full max-md:text-4xl">
+               Building the Future <br />with <br /> Precision and Innovation
             </div>
-            <div className="mt-11 text-2xl text-white max-md:mt-10 max-md:max-w-full">
+            <div className=" text-xl font-bold text-white max-md:mt-10 max-md:max-w-full">
               With a focus on excellence, we build more than just structures <br /> —we build the future of connectivity.{" "}
             </div>
-            <motion.div className="flex flex-col justify-between items-center mx-20 mt-11 w-52 max-w-full text-base font-semibold bg-white rounded-xl min-h-[64px] text-neutral-700 max-md:mt-10" whileHover={{ scale: 1.05 }}>
+            {/* <motion.div className="flex flex-col justify-between items-center mx-20 mt-11 w-52 max-w-full text-base font-semibold bg-white rounded-xl min-h-[64px] text-neutral-700 max-md:mt-10" whileHover={{ scale: 1.05 }}>
               <div className="flex gap-6 justify-between items-center px-4 py-3 max-w-full rounded-xl min-h-[64px] w-[152px]">
                 <div className="self-stretch my-auto">Call Us</div>
                 <img
@@ -62,9 +63,9 @@ function Main() {
                   className="object-contain shrink-0 self-stretch my-auto w-10 aspect-square"
                 />
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
-          <div className="flex relative flex-col">
+          {/* <div className="flex relative flex-col">
             <motion.div initial={{ x: 250, opacity: 0 }} animate={{ x: 10, opacity: 1 }} transition={{ delay: 0.3, type: 'spring' }} className="flex flex-col justify-between items-center max-w-[120px] px-4 pt-4 pb-14 rounded-xl bg-white bg-opacity-90 min-h-[105px] max-h-[120px] ">
               <img
                 loading="lazy"
@@ -89,7 +90,7 @@ function Main() {
               />
               <span className="text-sm text-indigo-900 font-bold ">Well Constructed</span>
             </motion.div>
-          </div>
+          </div> */}
         </motion.div>
       </motion.div>
       <div className="flex flex-col w-full bg-white max-md:max-w-full">
@@ -116,7 +117,7 @@ function Main() {
                   className="object-contain self-center w-10 aspect-square"
                 />
                 <div className="flex-1 mt-4">
-                  Forensic Structural Engineering
+                  Engineering
                 </div>
               </div>
               <div className="flex flex-col self-stretch px-4 pt-4 pb-11 my-auto whitespace-nowrap bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
@@ -125,7 +126,7 @@ function Main() {
                   src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/1cb44d82477227935cf2ceb4c4937ebe58db60a443a9d5cde81b2a4bafb77f48?apiKey=fd68332350f04fa6815471d918ff3511&"
                   className="object-contain self-center w-10 aspect-square"
                 />
-                <div className="flex-1 mt-4">Additions</div>
+                <div className="flex-1 mt-4">Site Development</div>
               </div>
               <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
                 <img
@@ -133,18 +134,9 @@ function Main() {
                   src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/9a405d5128cc99400c5013fcbf5ad4707fdd346177f8642f2f4dd09e78c4a4c6?apiKey=fd68332350f04fa6815471d918ff3511&"
                   className="object-contain self-center w-10 aspect-square"
                 />
-                <div className="flex-1 mt-4">New constructions</div>
+                <div className="flex-1 mt-4">Small Cell & Fiber</div>
               </div>
-              <div className="flex flex-col self-stretch p-4 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/b1572bdd8a54355c2984dd00249537003b58634a435630a6c5d401b00e73eb80?apiKey=fd68332350f04fa6815471d918ff3511&"
-                  className="object-contain self-center w-10 aspect-square"
-                />
-                <div className="flex-1 mt-4">
-                  Structural Drawings and Blueprints
-                </div>
-              </div>
+              
             </div>
             <div className="flex flex-wrap gap-10 justify-center items-center mt-12 max-w-full w-[936px] max-md:mt-10">
               <div className="flex flex-col self-stretch px-4 py-5 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
@@ -154,32 +146,43 @@ function Main() {
                   className="object-contain self-center w-10 aspect-square"
                 />
                 <div className="flex-1 mt-4">
-                  Concrete Repair and Corrosion Mitigation
+                  {/* Concrete Repair and Corrosion Mitigation */}
+                  Site Acquisition
                 </div>
               </div>
-              <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
+              <div className="flex flex-col self-stretch p-4 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/b1572bdd8a54355c2984dd00249537003b58634a435630a6c5d401b00e73eb80?apiKey=fd68332350f04fa6815471d918ff3511&"
+                  className="object-contain self-center w-10 aspect-square"
+                />
+                <div className="flex-1 mt-4">
+                  Utlity / Oil & Gas
+                </div>
+              </div>
+              {/* <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/3f84f016978a26fee931f3d2eb608af13624a12645550fd54991af3856414df5?apiKey=fd68332350f04fa6815471d918ff3511&"
                   className="object-contain self-center w-10 aspect-square"
                 />
                 <div className="flex-1 mt-4">Structural Fatigue Analysis</div>
-              </div>
-              <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
+              </div> */}
+              {/* <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/9cfbc9ac14fedf0fb5ef038004aaad71259e530419c4be4f4373c500c54bf380?apiKey=fd68332350f04fa6815471d918ff3511&"
                   className="object-contain self-center w-10 aspect-square"
                 />
                 <div className="flex-1 mt-4">Multi Family Homes</div>
-              </div>
+              </div> */}
               <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/15cec47da67f49a9f532a99fe9daf8c31fe9cd773afc95a3b5f773580438a366?apiKey=fd68332350f04fa6815471d918ff3511&"
                   className="object-contain self-center w-10 aspect-square"
                 />
-                <div className="flex-1 mt-4">Commercial Projects</div>
+                <div className="flex-1 mt-4">Project Management</div>
               </div>
             </div>
           </div>
@@ -219,13 +222,15 @@ function Main() {
                       <div className="mt-2.5 max-w-full border-2 border-solid border-indigo-700 min-h-[2px] w-[190px]" />
                     </div>
                   </div>
-                  <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">Building Stronger Communities through Collaboration and Excellence in Construction</h2>
+                  {/* <h2 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">Building Stronger Communities through Collaboration and Excellence in Construction</h2> */}
                   <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                    {/* Through collaborationperse perspectives and strengths 
-                    are leveraged to create inclusive environments where everyone has the opportunity to thrive. This approach not only fosters personal growth and achievement but also strengthens the fabric of society. */}
-                    At<strong className="text-indigo-700 text-xl">&nbsp;TowerEdge </strong>, We are pioneers in providing cutting-edge solutions for the telecommunications and Infrastructure sectors. Specializing in tower design, construction, maintenance, and Management, we deliver high-quality services that enable Seamless connectivity and Operational Efficiency.
+                    At<strong className="text-indigo-700 text-xl">&nbsp;TowerEdge </strong>
+                    {/* , We are pioneers in providing cutting-edge solutions for the telecommunications and Infrastructure sectors. Specializing in tower design, construction, maintenance, and Management, we deliver high-quality services that enable Seamless connectivity and Operational Efficiency. */}
+                    ,we are dedicated to providing innovative, reliable, and sustainable engineering solutions that meet the diverse needs of our clients. Specializing in structural and civil engineering for telecommunications infrastructure, we are committed to delivering high-quality services with an unwavering focus on safety, efficiency, and cost-effectiveness.
+                    <br/><br/>
+                    <p className="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">With a team of experienced engineers and consultants, TowerEdge integrates cutting-edge technology, in-depth industry knowledge, and a customer-centric approach to ensure the success of every project. We partner with clients across various industries, offering tailored solutions for tower design, maintenance, site acquisition, and structural assessments.</p>
                     <br/> <br/>
-                      <strong >Founded in 2024</strong>, TowerEdge is committed to setting new standards in tower infrastructure.From initial planning and design to construction and ongoing management, we ensure that each tower is built with
+                      <strong >Established in 2024</strong>, TowerEdge is committed to setting new standards in tower infrastructure.From initial planning and design to construction and ongoing management, we ensure that each tower is built with
                       <strong className="italic underline underline-offset-4 "> &nbsp;Precision and Reliability </strong>.
                     </p>
                 </div>
@@ -247,12 +252,8 @@ function Main() {
               <div className="mt-2.5 w-full border-2 border-indigo-800 border-solid min-h-[2px]" />
             </div>
           </div>
-          <div className="flex flex-col px-14 mt-36 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
-            <div className="ml-20 text-base text-slate-200 w-[580px] max-md:max-w-full">
-              Lorem ipsum dolor sit amet consectetur. Vitae platea quam gravida
-              suspendisse. Augue massa cum dolor nisl ultricies.
-            </div>
-            <div className="flex flex-wrap gap-10 justify-between items-start mt-40 max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col px-14 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+            <div className="flex flex-wrap gap-10 justify-between items-start my-10 max-md:mt-10 max-md:max-w-full">
               <img
                 loading="lazy"
                 srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&"
@@ -280,17 +281,6 @@ function Main() {
           </div>
           <div className="flex flex-wrap flex-1 gap-10 self-center mt-8 max-w-full h-full font-semibold w-[1154px]">
             <div className="flex flex-col pb-7 text-base min-w-[240px] text-slate-400 w-[448px] max-md:max-w-full">
-              {/* <div className="flex flex-col justify-between p-4 w-full min-h-[465px] max-md:max-w-full">
-                <div className="gap-2.5 self-stretch p-4 w-full rounded-xl border border-solid bg-slate-200 border-slate-400">
-                  Email :
-                </div>
-                <div className="gap-2.5 px-4 pt-2 pb-40 mt-14 w-full rounded-xl border border-solid bg-slate-200 border-slate-400 min-h-[194px] max-md:pb-24 max-md:mt-10">
-                  Message :{" "}
-                </div>
-                <div className="flex-1 shrink gap-2 self-stretch px-4 py-5 mt-14 max-w-full text-center text-white whitespace-nowrap bg-indigo-800 rounded-xl min-h-[64px] w-[221px] max-md:mt-10">
-                  Send
-                </div>
-              </div> */}
               <div className="flex flex-col justify-between p-4 w-full min-h-[365px] max-md:max-w-full">
                 <div className="gap-2.5 self-stretch p-4 w-full rounded-xl">
                   <input
@@ -330,7 +320,7 @@ function Main() {
                       Telephone:
                     </div>
                     <div className="mt-5 text-sm tracking-widest text-indigo-800">
-                      123456789
+                      +91-9703030996
                     </div>
                   </div>
                 </div>
@@ -345,7 +335,7 @@ function Main() {
                       Address
                     </div>
                     <div className="mt-5 text-sm tracking-widest text-indigo-800">
-                      Downs st. Vancouver,Canada
+                      #9, 2nd Floor Vinayagar Trade Centre, VIP Road, CBM Compound, Visakhapatnam, 530003, IN
                     </div>
                   </div>
                 </div>
@@ -360,6 +350,22 @@ function Main() {
                       Linkedin
                     </div>
                     <div className="mt-5 text-indigo-800">https://www.linkedin.com/company/toweredge-engineering-consultants/</div>
+                  </div>
+                </div>
+                <div className="flex gap-5 items-start px-4 py-2 mt-4 w-full text-base whitespace-nowrap rounded-xl">
+                  <img
+                    loading="lazy"
+                    //src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/12666b269aceb5f3463b9b409d973144606d402c158b45d77851cda5e0667170?apiKey=fd68332350f04fa6815471d918ff3511&"
+                    src="/emailLogo.png"
+                    className="object-contain shrink-0 w-6 aspect-square"
+                  />
+                  <div className="flex flex-col flex-1 shrink justify-center basis-0 min-w-[240px]">
+                    <div className="gap-5 self-start text-slate-700">
+                      Email
+                    </div>
+                    <div className="mt-5 text-indigo-800">
+                      info@toweredgeconsultants.com
+                    </div>
                   </div>
                 </div>
               </div>

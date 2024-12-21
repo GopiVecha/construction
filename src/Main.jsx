@@ -1,5 +1,9 @@
 import * as React from "react";
+import { useEffect } from "react"
 import { motion } from "framer-motion";
+import Slider from './Carousel/Slider';
+import CardList from "./Carousel/Card";
+
 
 function Main() {
   const fadeIn = {
@@ -20,6 +24,9 @@ function Main() {
   const hoverEffect = {
     hover: { scale: 1.05, transition: { duration: 0.3 } },
   };
+  useEffect(() => {
+    window.scrollTo(0,0)
+  },[])
   return (
     <motion.div className="flex overflow-hidden flex-col bg-stone-800" initial="hidden" animate="visible">
       <motion.div className="flex overflow-hidden z-10 flex-col justify-center items-center px-16 py-2 w-full text-base font-semibold text-indigo-800 bg-white max-md:px-5 max-md:max-w-full" variants={fadeIn}>
@@ -27,7 +34,8 @@ function Main() {
           <img
             loading="lazy"
             srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&"
-            className="object-contain shrink-0 self-stretch my-auto aspect-[4.02] w-[221px]"
+            className="object-contain shrink-0 self-stretch my-auto aspect-[4.02] w-[221px] cursor-pointer"
+            onClick={() => window.location.reload()}
           />
           <div className="flex flex-wrap gap-10 items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
             <a href="#aboutus" className="self-stretch my-auto">About us</a>
@@ -99,7 +107,7 @@ function Main() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          className="flex flex-col items-center pt-px pr-36 pb-52 pl-36 w-full min-h-[763px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
+          className="flex flex-col items-center pt-px pr-36 pb-52 pl-36 w-full  h-[750px]  min-h-[750px] max-md:px-5 max-md:pb-24 max-md:max-w-full"
           variants={staggerContainer}
         >
           <div className="flex gap-2.5 items-center py-4 max-w-full text-2xl font-medium text-indigo-700 whitespace-nowrap w-[1154px]">
@@ -108,7 +116,7 @@ function Main() {
               <div className="mt-2.5 max-w-full border-2 border-solid border-indigo-700 min-h-[2px] w-[100px]" />
             </div>
           </div>
-          <div className="flex flex-col items-center p-4 mt-16 w-full text-base text-center max-w-[1149px] text-slate-700 max-md:mt-10 max-md:max-w-full">
+          {/* <div className="flex flex-col items-center p-4 mt-16 w-full text-base text-center max-w-[1149px] text-slate-700 max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-wrap gap-5 justify-center items-center max-w-full h-[166px] w-[1018px]">
               <div className="flex flex-col self-stretch px-4 py-5 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
                 <img
@@ -146,7 +154,7 @@ function Main() {
                   className="object-contain self-center w-10 aspect-square"
                 />
                 <div className="flex-1 mt-4">
-                  {/* Concrete Repair and Corrosion Mitigation */}
+                  
                   Site Acquisition
                 </div>
               </div>
@@ -160,22 +168,6 @@ function Main() {
                   Utlity / Oil & Gas
                 </div>
               </div>
-              {/* <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/3f84f016978a26fee931f3d2eb608af13624a12645550fd54991af3856414df5?apiKey=fd68332350f04fa6815471d918ff3511&"
-                  className="object-contain self-center w-10 aspect-square"
-                />
-                <div className="flex-1 mt-4">Structural Fatigue Analysis</div>
-              </div> */}
-              {/* <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
-                <img
-                  loading="lazy"
-                  src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/9cfbc9ac14fedf0fb5ef038004aaad71259e530419c4be4f4373c500c54bf380?apiKey=fd68332350f04fa6815471d918ff3511&"
-                  className="object-contain self-center w-10 aspect-square"
-                />
-                <div className="flex-1 mt-4">Multi Family Homes</div>
-              </div> */}
               <div className="flex flex-col self-stretch px-4 pt-4 pb-8 my-auto bg-white rounded-3xl h-[171px] min-h-[167px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[174px]">
                 <img
                   loading="lazy"
@@ -185,8 +177,10 @@ function Main() {
                 <div className="flex-1 mt-4">Project Management</div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <CardList />
         </motion.div>
+        
         {/* <div id="aboutus" className="flex flex-col items-center self-center w-full max-w-[1440px] min-h-[841px] max-md:max-w-full">
           <div className="flex gap-2.5 items-center py-4 max-w-full text-2xl font-medium text-indigo-700 w-[1142px]">
             <div className="flex flex-col justify-center self-stretch my-auto">
@@ -249,26 +243,12 @@ function Main() {
           <div className="flex gap-2.5 items-center py-4 pr-36 pl-36 text-2xl font-medium whitespace-nowrap text-zinc-300 max-md:px-5 max-md:mr-0.5">
             <div className="flex flex-col justify-center self-stretch my-auto w-[100px]">
               <div className="gap-2.5 self-start">Gallery</div>
-              <div className="mt-2.5 w-full border-2 border-indigo-800 border-solid min-h-[2px]" />
+              <div className="mt-2.5 w-[80%] border-2 border-indigo-800 border-solid min-h-[2px]" />
             </div>
           </div>
-          <div className="flex flex-col px-14 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-col px-14 w-screen max-md:px-5 max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-wrap gap-10 justify-between items-start my-10 max-md:mt-10 max-md:max-w-full">
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/be744e72607fe1487df46c281e23e27399b8c5df4e9a49cefaafa779c29183b0?apiKey=fd68332350f04fa6815471d918ff3511&"
-                className="object-contain aspect-[1.95] min-w-[240px] w-[602px] max-md:max-w-full"
-              />
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/bb523048b9fe90ee421e603f24d58827331b1a70948bb9a469f6a1e9f68b80be?apiKey=fd68332350f04fa6815471d918ff3511&"
-                className="object-contain aspect-[1.13] min-w-[240px] w-[349px]"
-              />
-              <img
-                loading="lazy"
-                srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/d03f4b83aff18593f7e1afd2a46ddbd677a46d41a36c0cbb863fe1d1edc2cb19?apiKey=fd68332350f04fa6815471d918ff3511&"
-                className="object-contain shrink-0 aspect-[0.91] min-w-[240px] w-[287px]"
-              />
+              <Slider />
             </div>
           </div>
         </div>

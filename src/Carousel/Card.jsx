@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = ({ imgSrc, title, description, list }) => (
-    <div className="relative flex items-end w-[300px] h-[280px] rounded-[15px] p-6 bg-white shadow-lg transition-transform duration-400 ease-out hover:translate-y-[20px] group">
+    <div className="relative flex items-end w-[300px] h-[250px] rounded-[15px] p-6 bg-white shadow-lg border-2 transition-transform duration-400 ease-out hover:translate-y-[20px] group">
         {/* <div className="absolute top-0 left-0 w-full h-full bg-black/60 rounded-[15px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
         <img
             src={imgSrc}

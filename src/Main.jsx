@@ -37,7 +37,7 @@ function Main() {
             loading="lazy"
             //srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&"
             src="/towerEdge1.png"
-            className="object-cover  my-auto  w-[30%] cursor-pointer"
+            className="object-cover  my-auto w-[22%] cursor-pointer"
             onClick={() => window.location.reload()}
             initial={{ opacity: 0, x: -100}}
             transition={{ type: "spring", stiffness: 300, delay: 0.5}}
@@ -156,21 +156,6 @@ function Main() {
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-5 items-start px-4 py-2 mt-4 w-full">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/dc3027afe6853e9672cc08fd2e6e50aa50a1ccc6fd5ceba1e40366d7b17da102?apiKey=fd68332350f04fa6815471d918ff3511&"
-                    className="object-contain shrink-0 w-6 aspect-square"
-                  />
-                  <div className="flex flex-col flex-1 shrink justify-center basis-0 min-w-[240px]">
-                    <div className="gap-5 self-start text-base whitespace-nowrap text-slate-700">
-                      Address
-                    </div>
-                    <div className="mt-5 text-sm tracking-widest text-indigo-800">
-                      #9, 2nd Floor Vinayagar Trade Centre, VIP Road, CBM Compound, Visakhapatnam, 530003, IN
-                    </div>
-                  </div>
-                </div>
                 <div className="flex gap-5 items-start px-4 py-2 mt-4 w-full text-base whitespace-nowrap rounded-xl">
                   <img
                     loading="lazy"
@@ -203,17 +188,20 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden grid grid-rows-3 h-96 items-center px-16 py-4  w-full text-base text-white bg-indigo-800 max-md:px-5 max-md:max-w-full">
+          <div className="overflow-hidden h-96 grid grid-rows-3 w-full justify-items-center bg-indigo-800 max-md:px-5 max-md:max-w-full">
             <img
               loading="lazy"
-              //src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/88655b3f4fc274c1de587ba8768984d7ef9db46a0d6677b8153eb2329b68f996?apiKey=fd68332350f04fa6815471d918ff3511&"
               src="/FooterWhite.png"
-              className="object-cover h-32 items-center ml-[38%] justify-center w-90 "
+              className="object-contain h-36 justify-center mt-2"
             />
-            <div className="overflow-hidden ml-[35%] grid content-center p-6 tracking-wide text-lg  w-[35%] text-wrap mt-4  text-white  max-md:px-5 max-md:max-w-full">
-                #9, 2nd Floor Vinayagar Trade Centre, VIP Road, CBM Compound, Visakhapatnam, 530003, IN
+            <div className=" mt-12 leading-8 tracking-wide text-lg w-[32%] text-wrap  text-white  max-md:px-5 max-md:max-w-full">
+                #9, 2nd Floor Vinayagar Trade Centre, 
+                <br/>VIP Road,
+                <br/>
+                CBM Compound, <br/>
+                Visakhapatnam, 530003, IN
             </div>
-            <div className="overflow-hidden ml-12 mt-4  text-xl text-white bg-indigo-800 max-md:px-5 max-md:max-w-full">
+            <div className="overflow-hidden font-semibold text-xl content-end max-md:px-5 max-md:max-w-full">
                © 2024 TowerEdge Copyright - All Rights Reserved
             </div>
           </div>

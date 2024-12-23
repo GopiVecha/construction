@@ -16,16 +16,8 @@ const AboutUs = () => {
             title: "Our Vision",
             description:
               "To be a trusted Leader in delivering innovative and reliable engineering solutions in Telecom and beyond",
-        },
-        // {
-        //     iconSrc:
-        //       "/team.png",
-        //     title: "Core Values",
-        //     description:
-        //       "At TowerEdge, we are committed to upholding Integrity, pursuing Excellence, and fostering Collaboration to drive sustainable success and build lasting relationships"
-        // }   
+        }  
     ]
-    
     return (
         <>
             <section className="py-24 relative">
@@ -94,7 +86,7 @@ const AboutUs = () => {
                                 </div>
                                 <div className='p-2 mb-2 w-[95%] mx-2'>
                                     <p className='text-base text-gray-400 font-medium text-wrap text-left'>
-                                    At TowerEdge, we are committed to upholding <strong className='text-indigo-600  underline underline-offset-2 italic'>Integrity</strong>, pursuing <strong className='text-indigo-600 italic underline underline-offset-2'>Excellence</strong>, and fostering <strong className='text-indigo-600 underline underline-offset-2 italic'>Collaboration</strong> to drive sustainable success and build lasting relationships
+                                      At TowerEdge, we are committed to upholding <strong className='text-indigo-600  underline underline-offset-2 italic'>Integrity</strong>, pursuing <strong className='text-indigo-600 italic underline underline-offset-2'>Excellence</strong>, and fostering <strong className='text-indigo-600 underline underline-offset-2 italic'>Collaboration</strong> to drive sustainable success and build lasting relationships
                                     </p>
                                 </div>
                         </div>

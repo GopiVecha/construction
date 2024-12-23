@@ -14,7 +14,7 @@ const QuoteBlock = () => {
   return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-2xl mx-auto mt-8">
       <blockquote
-        className="text-lg italic text-gray-700"
+        className="text-lg italic text-indigo-800 font-semibold p-2"
         style={blockquoteStyle}
       >
         <p>

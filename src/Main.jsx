@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Slider from './Carousel/Slider';
 import CardList from "./Carousel/Card";
 import AboutUs from "./Carousel/AboutUs";
+import QuoteBlock from "./Carousel/QuoteBlock";
 
 
 function Main() {
@@ -32,11 +33,15 @@ function Main() {
     <motion.div className="flex overflow-hidden flex-col bg-stone-800" initial="hidden" animate="visible">
       <motion.div className="flex overflow-hidden z-10 flex-col justify-center items-center px-16 py-2 w-full text-base font-semibold text-indigo-800 bg-white max-md:px-5 max-md:max-w-full" variants={fadeIn}>
         <div className="flex flex-wrap gap-10 justify-between items-center w-full max-w-[1145px] max-md:max-w-full">
-          <img
+          <motion.img
             loading="lazy"
-            srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&"
-            className="object-contain shrink-0 self-stretch my-auto aspect-[4.02] w-[221px] cursor-pointer"
+            //srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&"
+            src="/towerEdge.jpg"
+            className="object-cover  my-auto  w-[25%] cursor-pointer"
             onClick={() => window.location.reload()}
+            initial={{ opacity: 0, x: -100}}
+            transition={{ type: "spring", stiffness: 300, delay: 0.5}}
+            animate={{ opacity: 1, x: 0}}
           />
           <div className="flex flex-wrap gap-10 items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
             <a href="#aboutus" className="self-stretch my-auto">About us</a>
@@ -47,22 +52,24 @@ function Main() {
           </div>
         </div>
       </motion.div>
-      <motion.div className="flex relative flex-col flex-wrap gap-5 justify-between items-start px-20 pt-8 pb-12 w-full min-h-[767px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
+      <motion.div className="flex relative flex-col flex-wrap gap-5 justify-between items-start px-20 pt-8 pb-12 w-full min-h-[720px] max-md:px-5 max-md:pt-24 max-md:max-w-full">
         <motion.img
           loading="lazy"
           src="/CoverPhoto.jpg"
           //srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/201b6f2c9265d50b5153d3442b24e6b19c714878ddbb158f430983fdb610f6f5?apiKey=fd68332350f04fa6815471d918ff3511&"
-          className="object-cover absolute inset-0 size-full bg-gradient-to-r from-slate-200 to-indigo-800"
+          className="object-cover absolute inset-0 size-full"
           variants={fadeIn}
         />
+        <div className="absolute inset-0 bg-gradient-to-t from-indigo-800 to-transparent opacity-50"></div>
         <motion.div className="flex flex-row items-center  justify-center gap-8" variants={staggerContainer}>
-          <motion.div className="flex relative flex-col  min-h-[506px] max-md:max-w-full" variants={slideUp}>
-            <div className="text-6xl mx-64 my-28 font-bold text-balance text-balance text-white max-md:max-w-full max-md:text-4xl">
+          <motion.div className="flex relative flex-col left-[10%] min-h-[506px] max-md:max-w-full" variants={slideUp}>
+            <div className="text-6xl mx-64 my-24 font-bold text-balance text-balance text-white max-md:max-w-full max-md:text-4xl">
                Building the Future <br />with <br /> Precision and Innovation
             </div>
-            <div className=" text-xl font-bold text-white max-md:mt-10 max-md:max-w-full">
-              With a focus on excellence, we build more than just structures <br /> —we build the future of connectivity.{" "}
-            </div>
+            {/* <div className="text-xl font-bold text-white max-md:mt-10 max-md:max-w-full">
+              "With a focus on excellence, we build more than just structures <br /> —we build the future of connectivity."{" "}
+            </div> */}
+            <QuoteBlock />
           </motion.div>
         </motion.div>
       </motion.div>

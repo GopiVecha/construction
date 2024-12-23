@@ -25,15 +25,7 @@ const AboutUs = () => {
               "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
         }   
     ]
-
-    const staggerContainer = {
-        hidden: { opacity: 0 },
-        visible: {
-          opacity: 1,
-          transition: { type: "spring", delayChildren: 0.5 },
-        },
-    };
-
+    
     return (
         <>
             <section className="py-24 relative">
@@ -69,8 +61,8 @@ const AboutUs = () => {
                           src="/AboutUs.jpg"
                           className="object-fill self-stretch lg:ml-4 my-auto aspect-[0.95] min-w-[240px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[553px] h-[420px] max-md:max-w-full"
                           alt="about Us image"
-                          initial={{ opacity: 0, x: 100}}
-                          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                          initial={{ opacity: 0, x: 300}}
+                          transition={{ type: "spring", delay: 0.5 }}
                           whileInView={{ opacity: 1, x: 0}}
                           viewport={{ once: true, delay: 0.5 }}
                         />

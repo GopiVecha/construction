@@ -21,7 +21,7 @@ const QuoteBlock = () => {
           {/* "It’s good to meet you, Dr. Banner. Your work on anti-electron collisions is unparalleled. And I’m a huge fan of the way you lose control and turn into an enormous green rage monster." */}
           "With a focus on excellence, we build more than just structures; we build the future of connectivity."{" "}
         </p>
-        <cite className="block mt-4 text-right font-semibold text-gray-900">- Katari Kanaka Chaitanya | CEO TowerEdge</cite>
+        <cite className="block mt-4 text-right font-semibold text-gray-900">- Katari Kanaka Chaitanya | Founder & MD </cite>
       </blockquote>
     </div>
   );

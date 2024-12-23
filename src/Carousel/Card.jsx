@@ -1,7 +1,7 @@
 import React from "react";
 
 const Card = ({ imgSrc, title, description, list }) => (
-    <div className="relative flex items-end w-[300px] h-[250px] rounded-[15px] p-6 bg-white shadow-lg border-2 transition-transform duration-400 ease-out hover:translate-y-[20px] group">
+    <div className="relative flex items-end w-[300px] h-[250px] rounded-[15px] p-6 bg-indigo-800 shadow-lg border-2 transition-transform duration-400 ease-out hover:translate-y-[20px] group">
         {/* <div className="absolute top-0 left-0 w-full h-full bg-black/60 rounded-[15px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
         <img
             src={imgSrc}
@@ -20,7 +20,7 @@ const Card = ({ imgSrc, title, description, list }) => (
         {/* <div className="text-2xl font-bold absolute top-4 left-8 z-20 text-indigo-700 group-hover:text-white">
             {title}
         </div> */}
-        <div className="text-2xl text-center font-bold absolute top-[40%] left-12 z-20 text-indigo-700 group-hover:text-white group-hover:top-4 group-hover:left-6">
+        <div className="text-2xl text-center font-bold absolute top-[40%] left-12 z-20 text-white group-hover:text-white group-hover:top-4 group-hover:left-6">
             {title}
         </div>
         {/* Info */}
@@ -42,7 +42,7 @@ const CardList = () => {
       title: "Engineering",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Telecommunications Upgrades", "Design", "Civil & Electrical Construction", "Tower Services"]
+      list: ["Tower / Mount Analysis", "Tower / Mount Modifications", "Rooftop & Water Tank analysis", "Structural Letters", "Mapping Reports"]
     },
     {
       imgSrc:
@@ -50,7 +50,7 @@ const CardList = () => {
       title: "Site Development",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Telecommunications Upgrades", "Design", "Civil & Electrical Construction", "Tower Services"]
+      list: ["A&E Drawings", "Structural Detailing", "Revit/Architectural Drawings", "Generator Drawings"]
     },
     {
       imgSrc:
@@ -58,7 +58,7 @@ const CardList = () => {
       title: "Small Cell & Fiber",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Telecommunications Upgrades", "Design", "Civil & Electrical Construction", "Tower Services"]
+      list: ["Node Design & Drawings", "Traffic Control Plans", "IKE Reports", "Fiber Route Drawings", "Utility Pole  analysis"]
     },
     {
       imgSrc:
@@ -66,7 +66,7 @@ const CardList = () => {
       title: "Site Acquisition",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Telecommunications Upgrades", "Design", "Civil & Electrical Construction", "Tower Services"]
+      list: ["Zoning Administrative & Permitting",  "Report Writing for Jurisdictions/Contractors", "Preliminary Zoning & Permitting Determination"]
     },
     {
       imgSrc:
@@ -74,7 +74,7 @@ const CardList = () => {
       title: "Utility/Oil & Gas",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Telecommunications Upgrades", "Design", "Civil & Electrical Construction", "Tower Services"]
+      list: ["GA Drawings", "Revit/Architectural Drawings", "Structural Design", "Rigging Calcs"]
     },
     {
       imgSrc:
@@ -82,7 +82,7 @@ const CardList = () => {
       title: "Project Management",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Telecommunications Upgrades", "Design", "Civil & Electrical Construction", "Tower Services"]
+      list: ["Project Scheduling", "Preparing Work logs", "Tracking & Monitoring Project Delivery", "Invoice Generation (Manual/AI)"]
     },
   ];
 

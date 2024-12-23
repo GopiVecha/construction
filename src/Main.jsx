@@ -36,16 +36,16 @@ function Main() {
           <motion.img
             loading="lazy"
             //srcSet="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=100 100w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=200 200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=400 400w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=800 800w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/e22622f681002c872f62bf9daddc6cd0edec43587445e2b5e9c6c1e0edc05842?apiKey=fd68332350f04fa6815471d918ff3511&"
-            src="/towerEdge.jpg"
-            className="object-cover  my-auto  w-[25%] cursor-pointer"
+            src="/towerEdge1.png"
+            className="object-cover  my-auto  w-[30%] cursor-pointer"
             onClick={() => window.location.reload()}
             initial={{ opacity: 0, x: -100}}
             transition={{ type: "spring", stiffness: 300, delay: 0.5}}
             animate={{ opacity: 1, x: 0}}
           />
           <div className="flex flex-wrap gap-10 items-center self-stretch my-auto min-w-[240px] max-md:max-w-full">
-            <a href="#aboutus" className="self-stretch my-auto">About us</a>
-            <a href="#services" className="self-stretch my-auto">Services </a>
+            <a href="#aboutus" className="self-stretch my-auto text-lg">About us</a>
+            <a href="#services" className="self-stretch my-auto text-lg">Services </a>
             <a href="#contactus" className="gap-2.5 self-stretch p-4 my-auto w-52 text-white bg-indigo-800 rounded-xl border border-orange-100 border-solid">
               Contact us
             </a>
@@ -203,9 +203,21 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="overflow-hidden px-16 py-14 mt-8 w-full text-base text-white bg-indigo-800 max-md:px-5 max-md:max-w-full">
-            TowerEdge Copyright © 2024
+          <div className="overflow-hidden grid grid-rows-3 h-96 items-center px-16 py-4  w-full text-base text-white bg-indigo-800 max-md:px-5 max-md:max-w-full">
+            <img
+              loading="lazy"
+              //src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/88655b3f4fc274c1de587ba8768984d7ef9db46a0d6677b8153eb2329b68f996?apiKey=fd68332350f04fa6815471d918ff3511&"
+              src="/FooterWhite.png"
+              className="object-cover h-32 items-center ml-[38%] justify-center w-90 "
+            />
+            <div className="overflow-hidden ml-[35%] grid content-center p-6 tracking-wide text-lg  w-[35%] text-wrap mt-4  text-white  max-md:px-5 max-md:max-w-full">
+                #9, 2nd Floor Vinayagar Trade Centre, VIP Road, CBM Compound, Visakhapatnam, 530003, IN
+            </div>
+            <div className="overflow-hidden ml-12 mt-4  text-xl text-white bg-indigo-800 max-md:px-5 max-md:max-w-full">
+               © 2024 TowerEdge Copyright - All Rights Reserved
+            </div>
           </div>
+          
         </div>
       </div>
     </motion.div>

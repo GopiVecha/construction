@@ -202,7 +202,7 @@ function Main() {
                 CBM Compound, <br/>
                 Visakhapatnam, 530003, IN
             </div>
-            <div className="overflow-hidden font-semibold text-xl content-end max-md:px-5 max-md:max-w-full">
+            <div className="overflow-hidden mb-2 font-semibold text-xl content-end max-md:px-5 max-md:max-w-full">
                © 2024 TowerEdge Copyright - All Rights Reserved
             </div>
           </div>

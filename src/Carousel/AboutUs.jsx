@@ -62,16 +62,16 @@ const AboutUs = () => {
                     <div className="grid grid-cols-3 mt-16 h-36 gap-4">
                         {aboutInfo.map((info) => (
                             <div className="grid grid-rows-[1fr_2fr] h-[95%]  rounded-xl border-2">
-                                <div className="flex flex-row h-[90%] mt-2">
+                                <div className="flex flex-start flex-row h-[90%] mt-2">
                                     <img
                                         loading="lazy"
                                         src={info.iconSrc}
                                         className="object-contain mx-4 shrink-0 w-6 aspect-square"
                                     />
-                                    <h1 className='text-black text-lg mt-1 font-semibold text-left'>{info.title}</h1>
+                                    <h1 className='text-black text-lg mt-2.5 font-semibold text-left'>{info.title}</h1>
                                 </div>
                                 <div className='p-2 mb-2 w-[95%] mx-2'>
-                                    <p className='text-base text-gray-400 font-medium text-wrap text-left'>{info.description}</p>
+                                    <p className='text-base text-gray-500 font-medium text-wrap text-left'>{info.description}</p>
                                 </div>
                             </div>
                         ))}
@@ -82,10 +82,10 @@ const AboutUs = () => {
                                         src="/team.png"
                                         className="object-contain mx-4 shrink-0 w-6 aspect-square"
                                     />
-                                    <h1 className='text-black text-lg mt-1 font-semibold text-left'>Core Values</h1>
+                                    <h1 className='text-black text-lg mt-2.5 font-semibold text-left'>Core Values</h1>
                                 </div>
                                 <div className='p-2 mb-2 w-[95%] mx-2'>
-                                    <p className='text-base text-gray-400 font-medium text-wrap text-left'>
+                                    <p className='text-base text-gray-500 font-medium text-wrap text-left'>
                                       At TowerEdge, we are committed to upholding <strong className='text-indigo-600  underline underline-offset-2 italic'>Integrity</strong>, pursuing <strong className='text-indigo-600 italic underline underline-offset-2'>Excellence</strong>, and fostering <strong className='text-indigo-600 underline underline-offset-2 italic'>Collaboration</strong> to drive sustainable success and build lasting relationships
                                     </p>
                                 </div>

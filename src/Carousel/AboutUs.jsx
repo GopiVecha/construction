@@ -51,7 +51,7 @@ const AboutUs = () => {
                         </div>
                         <motion.img
                           src="/AboutUs.jpg"
-                          className="object-fill self-stretch lg:ml-4 my-auto aspect-[0.95] min-w-[240px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[553px] h-[420px] max-md:max-w-full"
+                          className="object-fill mt-1 self-stretch lg:ml-4 my-auto aspect-[0.95] min-w-[240px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] w-[553px] h-[420px] max-md:max-w-full"
                           alt="about Us image"
                           initial={{ opacity: 0, x: 300}}
                           transition={{ type: "spring", delay: 0.5 }}

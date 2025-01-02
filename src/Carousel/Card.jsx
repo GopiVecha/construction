@@ -66,7 +66,7 @@ const CardList = () => {
       title: "Site Acquisition",
       description:
         "Lorem Ipsum is simply dummy text from the printing and typesetting industry.",
-      list: ["Zoning Administrative & Permitting",  "Report Writing for Jurisdictions/Contractors", "Preliminary Zoning & Permitting Determination"]
+      list: ["Zoning Administrative",  "Report Writing for Jurisdictions/Contractors", "Preliminary Zoning & Permitting Determination"]
     },
     {
       imgSrc:

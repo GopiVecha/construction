@@ -5,6 +5,7 @@ import Slider from './Carousel/Slider';
 import CardList from "./Carousel/Card";
 import AboutUs from "./Carousel/AboutUs";
 import QuoteBlock from "./Carousel/QuoteBlock";
+import { ProductGallery } from "./Carousel/ProductGallery";
 
 
 function Main() {
@@ -106,103 +107,18 @@ function Main() {
           </div>
         </div>
         <div id="contactus" className="flex flex-col w-full font-medium min-h-[757px] max-md:max-w-full">
-          <div className="flex gap-2.5 items-center py-4 pr-36 pl-36 w-full text-2xl text-indigo-700 max-md:px-5 max-md:max-w-full">
-            <div className="flex flex-col justify-center self-stretch my-auto">
-              <div className="gap-2.5 self-stretch">Let’s get in touch!</div>
-              <div className="mt-2.5 max-w-full border-2 border-white border-solid min-h-[2px] w-[100px]" />
-            </div>
-          </div>
-          <div className="flex flex-wrap flex-1 gap-10 self-center mt-8 max-w-full h-full font-semibold w-[1154px]">
-            <div className="flex flex-col pb-7 text-base min-w-[240px] text-slate-400 w-[448px] max-md:max-w-full">
-              <div className="flex flex-col justify-between p-4 w-full min-h-[365px] max-md:max-w-full">
-                <div className="gap-2.5 self-stretch p-4 w-full rounded-xl">
-                  <input
-                    id="email"
-                    type="email"
-                    className="w-full p-2 mt-1 rounded-xl border border-slate-400 bg-slate-200"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <div className="gap-2.5 px-4 pt-2 pb-40 mt-14 w-full rounded-xl min-h-[20px] h-[200px]  max-md:pb-24 max-md:mt-10">
-                  <textarea
-                    id="message"
-                    className="w-full p-2 mt-1 rounded-xl border border-slate-400 bg-slate-200"
-                    placeholder="Enter your message"
-                    rows="5"
-                    required
-                  />
-                </div>
-                <button className="flex-1 shrink gap-2 self-stretch px-4 py-5 mx-16  max-w-full text-center text-white whitespace-nowrap bg-indigo-800 rounded-xl min-h-[64px] w-[221px] max-md:mt-10">
-                  Send
-                </button>
-              </div>
-
-            </div>
-            <div className="shrink-0 w-px border-2 border-solid border-slate-600 h-[491px]" />
-            <div className="flex flex-col justify-center self-start px-4 py-8 min-h-[491px] min-w-[240px] w-[448px] max-md:max-w-full">
-              <div className="flex flex-col flex-1 w-full">
-                <div className="flex gap-5 items-start px-4 py-2.5 w-full whitespace-nowrap min-h-[85px]">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/88655b3f4fc274c1de587ba8768984d7ef9db46a0d6677b8153eb2329b68f996?apiKey=fd68332350f04fa6815471d918ff3511&"
-                    className="object-contain shrink-0 w-6 aspect-square"
-                  />
-                  <div className="flex flex-col flex-1 shrink justify-center basis-0 min-w-[240px]">
-                    <div className="gap-5 self-start text-base text-slate-700">
-                      Telephone:
-                    </div>
-                    <div className="mt-5 text-sm tracking-widest text-indigo-800">
-                      +91-9703030996
-                    </div>
-                  </div>
-                </div>
-                <div className="flex gap-5 items-start px-4 py-2 mt-4 w-full text-base whitespace-nowrap rounded-xl">
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/12666b269aceb5f3463b9b409d973144606d402c158b45d77851cda5e0667170?apiKey=fd68332350f04fa6815471d918ff3511&"
-                    className="object-contain shrink-0 w-6 aspect-square"
-                  />
-                  <div className="flex flex-col flex-1 shrink justify-center basis-0 min-w-[240px]">
-                    <div className="gap-5 self-start text-slate-700">
-                      Linkedin
-                    </div>
-                    <div className="mt-5 text-indigo-800">https://www.linkedin.com/company/toweredge-engineering-consultants/</div>
-                  </div>
-                </div>
-                <div className="flex gap-5 items-start px-4 py-2 mt-4 w-full text-base whitespace-nowrap rounded-xl">
-                  <img
-                    loading="lazy"
-                    //src="https://cdn.builder.io/api/v1/image/assets/fd68332350f04fa6815471d918ff3511/12666b269aceb5f3463b9b409d973144606d402c158b45d77851cda5e0667170?apiKey=fd68332350f04fa6815471d918ff3511&"
-                    src="/emailLogo.png"
-                    className="object-contain shrink-0 w-6 aspect-square"
-                  />
-                  <div className="flex flex-col flex-1 shrink justify-center basis-0 min-w-[240px]">
-                    <div className="gap-5 self-start text-slate-700">
-                      Email
-                    </div>
-                    <div className="mt-5 text-indigo-800">
-                      info@toweredgeconsultants.com
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ProductGallery />
+          {/* END OF Contact us */}
           <div className="overflow-hidden h-96 grid grid-rows-3 w-full justify-items-center bg-indigo-800 max-md:px-5 max-md:max-w-full">
             <img
               loading="lazy"
               src="/FooterWhite.png"
               className="object-contain h-36 justify-center mt-2"
             />
-            <div className=" mt-12 leading-8 tracking-wide text-lg w-[32%] text-wrap  text-white  max-md:px-5 max-md:max-w-full">
-                #9, 2nd Floor Vinayagar Trade Centre, 
-                <br/>VIP Road,
-                <br/>
-                CBM Compound, <br/>
-                Visakhapatnam, 530003, IN
+            <div className="mt-16 leading-8 text-slate-50 tracking-wide text-lg w-[52%] text-wrap text-center  max-md:px-5 max-md:max-w-full">
+                #9, 2nd Floor Vinayagar Trade Centre, VIP Road, CBM Compound, Visakhapatnam, 530003, IN
             </div>
-            <div className="overflow-hidden mb-2 font-semibold text-xl content-end max-md:px-5 max-md:max-w-full">
+            <div className="overflow-hidden mb-8  text-xl content-end max-md:px-5 max-md:max-w-full">
                © 2024 TowerEdge Copyright - All Rights Reserved
             </div>
           </div>

@@ -16,22 +16,25 @@ function ImageThumbnail({ src, className }) {
 function ThumbnailList() {
     const thumbnails = [
         {
-            src: "https://cdn.builder.io/api/v1/image/assets/TEMP/c65c397ad63361c3b03d7d32d888deb9b808380d414f82d92b8b4a8918692ec6?placeholderIfAbsent=true&apiKey=fd68332350f04fa6815471d918ff3511",
-            className: "aspect-[1.06] w-[102px]",
+            //src: "https://cdn.builder.io/api/v1/image/assets/TEMP/c65c397ad63361c3b03d7d32d888deb9b808380d414f82d92b8b4a8918692ec6?placeholderIfAbsent=true&apiKey=fd68332350f04fa6815471d918ff3511",
+            src: "/call.png",
+            className: "aspect-[1.06] p-4 w-[102px]",
             header: "Phone Number",
             details: "+91-9703030996",
             detailsAlign:""
         },
         {
-            src: "https://cdn.builder.io/api/v1/image/assets/TEMP/431779659fb39240dd35d9eb68726d617716c6d9a66652ec7c5d0a73194af12e?placeholderIfAbsent=true&apiKey=fd68332350f04fa6815471d918ff3511",
-            className: "mt-9 aspect-square w-[102px]",
-            header: "Our Location",
-            details: "",
+            //src: "https://cdn.builder.io/api/v1/image/assets/TEMP/431779659fb39240dd35d9eb68726d617716c6d9a66652ec7c5d0a73194af12e?placeholderIfAbsent=true&apiKey=fd68332350f04fa6815471d918ff3511",
+            src: "/linkedin.png",
+            className: "p-4 mt-9 text-nowrap aspect-[1] w-[102px]",
+            header: "Linkedin",
+            details: "linkedin.com/company/toweredge-engineering-consultants",
             detailsAlign:""
         },
         {
-            src: "https://cdn.builder.io/api/v1/image/assets/TEMP/cb0e99d62377640f871f656a7cff287f66cee48c5f638238c35e16dbf78b1bdd?placeholderIfAbsent=true&apiKey=fd68332350f04fa6815471d918ff3511",
-            className: "mt-9 aspect-square w-[102px]",
+            //src: "https://cdn.builder.io/api/v1/image/assets/TEMP/cb0e99d62377640f871f656a7cff287f66cee48c5f638238c35e16dbf78b1bdd?placeholderIfAbsent=true&apiKey=fd68332350f04fa6815471d918ff3511",
+            src: "/email.png",
+            className: "mt-9 p-4 aspect-[1] w-[102px]",
             header: "Email Address",
             details: "info@toweredgeconsultants.com",
             detailsAlign: "mt-6"
@@ -54,9 +57,13 @@ function ThumbnailList() {
                         src={thumbnail.src}
                         className={thumbnail.className}
                         />
-                        <div className={`flex flex-col text-black ${thumbnail.detailsAlign} w-[60%] items-start justify-center`}>
+                        <div className={`flex flex-col  ${index == 1 ? 'mt-6' : 'mt-1'} text-black ${thumbnail.detailsAlign} w-[60%] items-start justify-center`}>
                             <h1 className="text-nowrap  text-xl">{thumbnail.header}</h1>
-                            <p  className="text-base text-gray-500 text-base font-semibold mt-2">{thumbnail.details}</p>
+                            {index !== 0  ? 
+                            <a href={ index == 1 ? `https:${thumbnail.details}` : `mailto:${thumbnail.details}`} target="_blank" className="text-base hover:underline hover:underline-offset-2 text-nowrap text-indigo-800 text-base font-bold mt-2">{thumbnail.details}</a>
+                            :
+                            <p className={`text-base text-nowrap text-gray-500 text-base font-semibold mt-2`}>{thumbnail.details}</p>
+                        }
                         </div>
                     </div>
                 ))}

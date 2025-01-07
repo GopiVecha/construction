@@ -109,16 +109,16 @@ function Main() {
         <div id="contactus" className="flex flex-col w-full font-medium min-h-[757px] max-md:max-w-full">
           <ProductGallery />
           {/* END OF Contact us */}
-          <div className="overflow-hidden h-96 grid grid-rows-3 w-full justify-items-center bg-indigo-800 max-md:px-5 max-md:max-w-full">
+          <div className="overflow-hidden h-96 grid grid-rows-3 w-full justify-items-center bg-indigo-800  max-md:px-5 max-md:max-w-full">
             <img
               loading="lazy"
-              src="/FooterWhite.png"
-              className="object-contain h-36 justify-center mt-2"
+              src="/towerEdge1.png"
+              className="object-contain h-36 justify-center mt-2 bg-white"
             />
-            <div className="mt-16 leading-8 text-slate-50 tracking-wide text-lg w-[52%] text-wrap text-center  max-md:px-5 max-md:max-w-full">
+            <div className="mt-16 leading-8  text-slate-50 tracking-wide text-lg w-[52%] text-wrap text-center  max-md:px-5 max-md:max-w-full">
                 #9, 2nd Floor Vinayagar Trade Centre, VIP Road, CBM Compound, Visakhapatnam, 530003, IN
             </div>
-            <div className="overflow-hidden mb-8  text-xl content-end max-md:px-5 max-md:max-w-full">
+            <div className="overflow-hidden mb-8  text-xl text-slate-50 content-end max-md:px-5 max-md:max-w-full">
                © 2024 TowerEdge Copyright - All Rights Reserved
             </div>
           </div>

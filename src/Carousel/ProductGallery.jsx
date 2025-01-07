@@ -68,7 +68,7 @@ function ThumbnailList() {
 // ProductGallery Component
 export function ProductGallery() {
     return (
-        <div className="flex overflow-hidden flex-col w-full py-10 justify-center bg-indigo-700 max-md:px-5 max-md:py-24">
+        <div className="flex overflow-hidden flex-col w-full py-10 justify-center  max-md:px-5 max-md:py-24">
             <div className="flex flex-wrap gap-2 justify-between items-start px-20 pt-24 pb-8 w-full  bg-white rounded-xl max-md:px-5 max-md:pt-24 max-md:max-w-full">
                 <ThumbnailList />
                 <div className="flex flex-col self-start max-md:max-w-full">
